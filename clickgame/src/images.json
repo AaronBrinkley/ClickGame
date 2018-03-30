@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Zarya",
+    "photo": "https://d1u1mce87gyfbn.cloudfront.net/hero/zarya/hero-select-portrait.png",
+    "occupation": "Fry Cook",
+    "location": "A Pineapple Under the Sea"
+  },
+  {
+    "id": 2,
+    "name": "Pharah",
+    "photo": "https://d1u1mce87gyfbn.cloudfront.net/hero/pharah/hero-select-portrait.png",
+    "occupation": "Restaurant Owner",
+    "location": "A Giant Anchor"
+  },
+  {
+    "id": 3,
+    "name": "Soldier 76",
+    "photo": "https://d1u1mce87gyfbn.cloudfront.net/hero/soldier-76/hero-select-portrait.png",
+    "occupation": "Cashier",
+    "location": "An Easter Island Head"
+  },
+  {
+    "id": 4,
+    "name": "Mei",
+    "photo": "https://d1u1mce87gyfbn.cloudfront.net/hero/mei/hero-select-portrait.png",
+    "occupation": "Boy Genius",
+    "location": "A Secret Laboratory"
+  },
+  {
+    "id": 5,
+    "name": "Brigitte",
+    "photo": "https://d1u1mce87gyfbn.cloudfront.net/hero/brigitte/hero-select-portrait.png",
+    "occupation": "A Cowardly Dog",
+    "location": "Nowhere, Kansas"
+  },
+  {
+    "id": 6,
+    "name": "Orisa",
+    "photo": "https://d1u1mce87gyfbn.cloudfront.net/hero/orisa/hero-select-portrait.png",
+    "occupation": "Student",
+    "location": "Bluffington"
+  },
+  {
+    "id": 7,
+    "name": "Genji",
+    "photo": "https://d1u1mce87gyfbn.cloudfront.net/hero/genji/hero-select-portrait.png",
+    "occupation": "Looney Toon",
+    "location": "A Rabbit Burrow"
+  },
+  {
+    "id": 8,
+    "name": "McCree",
+    "photo": "https://d1u1mce87gyfbn.cloudfront.net/hero/mccree/hero-select-portrait.png",
+    "occupation": "Ladies Man",
+    "location": "Aron City"
+  },
+  {
+    "id": 9,
+    "name": "Reaper",
+    "photo": "https://d1u1mce87gyfbn.cloudfront.net/hero/reaper/hero-select-portrait.png",
+    "occupation": "Adventurer",
+    "location": "California"
+  },
+  {
+    "id": 10,
+    "name": "Winston",
+    "photo": "https://d1u1mce87gyfbn.cloudfront.net/hero/winston/hero-select-portrait.png",
+    "occupation": "Cashier",
+    "location": "O-Town, California"
+  },
+  {
+    "id": 11,
+    "name": "Dva",
+    "photo": "https://d1u1mce87gyfbn.cloudfront.net/hero/dva/hero-select-portrait.png",
+    "occupation": "Superhero",
+    "location": "Earth"
+  },
+  {
+    "id": 12,
+    "name": "Mercy",
+    "photo": "https://d1u1mce87gyfbn.cloudfront.net/hero/mercy/hero-select-portrait.png",
+    "occupation": "Ahhhh! A Real Monster!",
+    "location": "Under a City Dump"
+  }
+]

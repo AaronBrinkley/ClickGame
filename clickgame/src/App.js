@@ -41,48 +41,54 @@ class App extends Component {
 
   checkCard = id => {
 
-    let WinValue = 0
-    let LossValue = 0
+    // let WinValue = 0
+    // let LossValue = 0
 
-    const pushedImages = this.state.pushedImages
-    const images = this.state.images
+    // const PushedImages = this.state.PushedImages
+    let images = this.state.images
     // const WinCount = this.state.WinCount
     // const LossCount = this.state.LossCount
 
     this.ShuffleImages(images)
 
-    for (let index = 0; index < images.length; index++) {
-      // const element = array[index];
-
-      if (id !== images[index].id ) {
-
-        // this.state.WinCount++
-
-        WinValue++
-
-        // pushedImages.push(id);
 
         this.setState({ 
-          images,
-          pushedImages,
-          WinCount: WinValue
+          images
 
         });
+
+    // for (let index = 0; index < images.length; index++) {
+    //   // const element = array[index];
+
+    //   if (id !== images[index].id ) {
+
+    //     // this.state.WinCount++
+
+    //     WinValue++
+
+    //     // pushedImages.push(id);
+
+    //     this.setState({ 
+    //       images,
+    //       PushedImages,
+    //       WinCount: WinValue
+
+    //     });
     
-        } else {
+    //     } else {
 
-          // this.state.LossCount++
+    //       // this.state.LossCount++
 
-          this.setState({ 
-            images,
-            pushedImages,
-            LossCount: LossValue
+    //       this.setState({ 
+    //         images,
+    //         PushedImages,
+    //         LossCount: LossValue
   
-          });
+    //       });
 
-        }
+    //     }
       
-    }
+    // }
 
     // const imageArray = this.state.images
 
@@ -136,8 +142,8 @@ class App extends Component {
       <Wrapper>
         <Title>Click Game</Title>
         {/* <Result>{answer}</Result> */}
-        <Wins>{this.state.WinCount}</Wins>
-        <Losses>{this.state.LossCount}</Losses>
+        <Wins>Wins: {this.state.WinCount}</Wins>
+        <Losses>Losses: {this.state.LossCount}</Losses>
         {this.state.images.map(image => (
           <ImageCard
             checkCard={this.checkCard}

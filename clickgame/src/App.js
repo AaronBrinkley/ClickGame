@@ -14,8 +14,8 @@ class App extends Component {
   state = {
     images,
     PushedImages: [],
-    WinCount: 0,
-    LossCount: 0
+    Score: 0,
+    TopScore: 0
   };
 
 
@@ -41,19 +41,45 @@ class App extends Component {
 
   checkCard = id => {
 
-    // let WinValue = 0
-    // let LossValue = 0
+    let Score = this.state.Score
+    let TopScore = this.state.TopScore
 
-    // const PushedImages = this.state.PushedImages
+    let PushedImages = this.state.PushedImages
     let images = this.state.images
+    let PushedIndex = PushedImages.indexOf(id)
+    
     // const WinCount = this.state.WinCount
     // const LossCount = this.state.LossCount
+    console.log(PushedIndex)
+
+    
+
+    if (PushedIndex === -1) {
+      
+      PushedImages.push(id)
+
+      Score++
+    
+    } else {
+      
+      Score = 0
+
+      PushedImages = []
+
+    }
+
+    if (Score > TopScore) {
+      TopScore++
+    }
 
     this.ShuffleImages(images)
 
 
         this.setState({ 
-          images
+          images,
+          PushedImages,
+          Score,
+          TopScore
 
         });
 
@@ -142,8 +168,8 @@ class App extends Component {
       <Wrapper>
         <Title>Click Game</Title>
         {/* <Result>{answer}</Result> */}
-        <Wins>Wins: {this.state.WinCount}</Wins>
-        <Losses>Losses: {this.state.LossCount}</Losses>
+        <Wins>Score: {this.state.Score}</Wins>
+        <Losses>TopScore: {this.state.TopScore}</Losses>
         {this.state.images.map(image => (
           <ImageCard
             checkCard={this.checkCard}
